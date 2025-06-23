@@ -1,0 +1,20 @@
+task 1:
+run 'mkdir my-app'
+
+task 2:
+run 'cd my-app'
+run 'touch README.md package.json'
+
+task 3:
+run 'mkdir public'
+run 'touch public/index.html'
+
+task 4:
+run 'mkdir src'
+run 'cd src'
+
+task 5:
+run 'touch App.css App.js index.css index.js'
+
+Bonus task:
+run 'mkdir -p components/Navbar'
