@@ -1,0 +1,31 @@
+task 1:
+run ' find -type f -name "*closed*" | wc -l'
+outcome: 980
+
+task 2:
+run ' find -type f -name "*CLOSED*" | wc -l'
+outcome: 3
+
+task 3:
+run ' find -type f -iname "*CLOSED*" | wc -l'
+outcome: 983
+
+task 4:
+run 'find -type f -iname "*[13579]_open*" | wc -l'
+outcome: 519
+
+task 5:
+run 'find -type f -empty | xargs ls'
+outcome: ./case_2900_open.txt  ./case_2950_open.txt  ./case_2979_closed.txt
+
+task 6:
+run 'find -size +20k'
+outcome: ./case_1503_closed.txt ./case_1647_open.txt ./case_1995_open.txt
+
+task 7:
+run 'find -size +150k -name "*closed*"'
+outcome: ./case_1503_closed.txt
+
+task 8:
+run ' find -newer yesterday.txt'
+this one doesn't work on my laptop :(
