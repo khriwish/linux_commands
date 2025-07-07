@@ -1,0 +1,9 @@
+another way to solve the level if you want to log on the from your own machine rather than being logged into bandit13 first is that we can copy the given private key start until the end and we add it to a new file on our working station
+
+so
+run 'cat sshkey.private' copy the contents and save them on you machine using 'echo'
+then we can log in using the option -i and specifying that its going through user bandit14@...
+so 
+run "ssh bandit14@bandit.labs.overthewire.org -p 2220 -i sshkey.private" 
+NOTE: if you do not include the bandit14 part it will not work since that private key is for it
+idk man :( (there is a detailed documentation that needs to be read)
